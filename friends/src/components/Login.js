@@ -27,6 +27,8 @@ class Login extends React.Component {
         .then(res => {
             if (res) {
                 this.props.history.push('/protected');
+            } else {
+                return 'ERROR'
             }
         })
     }
@@ -58,8 +60,6 @@ class Login extends React.Component {
             </div>
         )
     }
-
-
 
 }
 
